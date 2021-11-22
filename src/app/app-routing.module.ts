@@ -6,6 +6,7 @@ import { EditItemComponent } from './item/edit-item/edit-item.component';
 import { ItemFormComponent } from './item/item-form/item-form.component';
 import { ItemListComponent } from './item/item-list/item-list.component';
 import { EditPersonComponent } from './person/edit-person/edit-person.component';
+import { VoteListComponent } from './vote/vote-list/vote-list.component';
 
 const routes: Routes = [
   { path: 'persons', component: PersonListComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'editItem/:id', component: EditItemComponent },
   { path: 'items', component: ItemListComponent },
   { path: 'addItem', component: ItemFormComponent },
+  { path: 'votes', component: VoteListComponent },
 ];
 
 @NgModule({

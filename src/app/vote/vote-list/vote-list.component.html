@@ -1,1 +1,25 @@
-<p>vote-list works!</p>
+<div class="card my-5">
+  <div class="card-body">
+    <h2 class="text-center">VOTOS</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Pessoa</th>
+          <th scope="col">Item</th>
+          <th scope="col">Voto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vote of votes">
+          <td>{{ vote.id }}</td>
+          <td>{{ findPerson(vote.idPerson) }}</td>
+          <td>{{ findItem(vote.idItem)}}</td>
+          <td>{{ vote.flVote }}</td>
+
+        </tr>
+      </tbody>
+    </table>
+    <button routerLink="/addPerson" type="button" class="btn btn-primary btn-lg btn-block" id="add-button">Adicionar</button>
+  </div>
+</div>
