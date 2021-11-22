@@ -1,0 +1,39 @@
+<div *ngIf="dataLoaded">
+  <h2>Atualiza Pessoa</h2>
+<form [formGroup]="editPersonForm" (submit)="updatePerson()">
+
+  <div class="form-group">
+    <label for="name">Nome</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      name="name"
+      placeholder="Insira o seu nome"
+      required
+      formControlName="name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="cpf">CPF</label>
+    <input
+      type="text"
+      formControlName="cpf"
+      class="form-control"
+      id="cpf"
+      name="cpf"
+      placeholder="Insira o seu CPF"
+      required
+
+    />
+  </div>
+  <button
+    type="submit"
+    class="btn btn-info"
+  >
+    Atualizar
+  </button>
+
+</form>
+</div>

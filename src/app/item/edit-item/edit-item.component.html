@@ -1,0 +1,39 @@
+<div *ngIf="dataLoaded">
+  <h2>Atualiza Item</h2>
+<form [formGroup]="editItemForm" (submit)="updateItem()">
+
+  <div class="form-group">
+    <label for="subject">Assunto</label>
+    <input
+      type="text"
+      class="form-control"
+      id="subject"
+      name="subject"
+      placeholder="Insira o Assunto"
+      required
+      formControlName="subject"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="description">Descrição</label>
+    <input
+      type="text"
+      formControlName="description"
+      class="form-control"
+      id="description"
+      name="description"
+      placeholder="Insira a Descrição"
+      required
+
+    />
+  </div>
+  <button
+    type="submit"
+    class="btn btn-info"
+  >
+    Atualizar
+  </button>
+
+</form>
+</div>
