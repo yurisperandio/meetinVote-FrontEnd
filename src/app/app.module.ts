@@ -13,6 +13,9 @@ import { ItemService } from './service/item.service';
 import { ItemFormComponent } from './item/item-form/item-form.component';
 import { ItemListComponent } from '../app/item/item-list/item-list.component';
 import { EditItemComponent } from './item/edit-item/edit-item.component';
+import { VoteFormComponent } from './vote/vote-form/vote-form.component';
+import { VoteListComponent } from './vote/vote-list/vote-list.component';
+import { EditVoteComponent } from './vote/edit-vote/edit-vote.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EditItemComponent } from './item/edit-item/edit-item.component';
     EditPersonComponent,
     ItemFormComponent,
     ItemListComponent,
-    EditItemComponent
+    EditItemComponent,
+    VoteFormComponent,
+    VoteListComponent,
+    EditVoteComponent
   ],
   imports: [
     BrowserModule,
